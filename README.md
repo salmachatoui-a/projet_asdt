@@ -23,6 +23,7 @@ projet_asdt/
 ├── main.py                # Pipeline principal : livres → critiques → JSON
 ├── Book.py                # Modèle Book
 ├── BookManager.py         # Gestionnaire de collection de livres
+├── Rapport_asdt.pdf       # Rapport du projet 
 ├── Review.py              # Modèle Review
 ├── LangDetector.py        # Filtrage des critiques en anglais (lingua)
 ├── prompting/
