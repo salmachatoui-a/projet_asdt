@@ -103,4 +103,4 @@ pip install selenium lingua-language-detector ollama gutenberg-cleaner requests
 
 - **Paul** — scraping, pipeline de collecte, génération LLM
 - **Marie** — analyse TXM
--**Salma, Damien** - Rapport
+- **Salma, Damien** - Rapport
