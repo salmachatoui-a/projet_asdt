@@ -85,8 +85,9 @@ Les fichiers générés sont importés dans TXM pour une analyse structurelle et
 | `selenium` | Scraping Gutenberg & Goodreads |
 | `lingua-language-detector` | Détection de la langue (anglais) |
 | `ollama` | Interface locale avec Mistral Nemo 12b |
-| `gutenberg_cleaner` | Nettoyage des textes Project Gutenberg |
-| `requests` | Téléchargement des livres |
+| `gutenberg-cleaner` | Nettoyage des textes Project Gutenberg |
+| `wget` | Téléchargement des livres |
+| `requests` | Requêtes HTTP |
 
 **Pilotes requis :** Firefox + geckodriver (`/usr/bin/geckodriver`, `/usr/bin/firefox`)
 
@@ -94,9 +95,13 @@ Les fichiers générés sont importés dans TXM pour une analyse structurelle et
 
 ### Installation
 
+Le projet utilise [uv](https://docs.astral.sh/uv/) pour la gestion de l'environnement. Toutes les dépendances sont déclarées dans `pyproject.toml` et figées dans `uv.lock`.
+
 ```bash
-pip install selenium lingua-language-detector ollama gutenberg-cleaner requests
+uv sync
 ```
+
+C'est tout — `uv sync` crée le virtualenv et installe les dépendances en une seule commande.
 
 ---
 
